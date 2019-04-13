@@ -1,0 +1,27 @@
+<table border="1">
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Address</th>
+    <th>Action</th>
+  </tr>
+{{#each users}}
+<tr>
+    <td>
+        {{this.name}}
+    </td>
+    <td>
+        {{this.age}}
+    </td>
+    <td>
+        {{this.address}}
+    </td>
+    <td>
+        <a href="/users/edit/{{@index}}">Edit</a>
+        <a href="/users/delete/{{@index}}">delete </a>
+    </td>
+</tr>
+{{/each}}
+ 
+
+</table>
